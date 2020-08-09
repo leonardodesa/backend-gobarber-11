@@ -22,7 +22,6 @@ interface IRequestDTO {
 // UM REPOSITORIO PARA TRANSF
 
 // soliD
-
 @injectable()// Dependecy inversion 
 class CreateAppointmentService {
   constructor(
