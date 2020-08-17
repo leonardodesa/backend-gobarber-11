@@ -12,12 +12,6 @@ appointmentsRouter.use(ensureAuthenticated);
 // SOLID - SERVICES
 // Rota: Receber a requisição, chamar outro arquivo, devolver a resposta
 
-// appointmentsRouter.get('/', async (req, res) => {
-//   const appointments = await appointmentsRepository.find();
-
-//   return res.json(appointments);
-// });
-
-appointmentsRouter.post('/', appointmentsController.create);
+appointmentsRouter.postç('/', appointmentsController.create);
 
 export default appointmentsRouter;

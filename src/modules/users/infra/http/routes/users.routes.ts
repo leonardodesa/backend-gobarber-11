@@ -1,8 +1,4 @@
-import { Router, response } from 'express';
-import { container } from 'tsyringe';
-
-import multer from 'multer';
-import uploadConfig from '@config/upload';
+import { Router } from 'express';
 
 import UsersController from '../controllers/UsersController';
 import UserAvatarController from '../controllers/UserAvatarController';
@@ -12,7 +8,6 @@ import ensureAuthenticated from '@shared/infra/http/middlewares/ensureAuthentica
 const usersRouter = Router();
 const usersController = new UsersController();
 const userAvatarController = new UserAvatarController();
-const upload = multer(uploadConfig);
 
 // Repositories
 // Services 
