@@ -12,6 +12,6 @@ appointmentsRouter.use(ensureAuthenticated);
 // SOLID - SERVICES
 // Rota: Receber a requisição, chamar outro arquivo, devolver a resposta
 
-appointmentsRouter.postç('/', appointmentsController.create);
+appointmentsRouter.post('/', appointmentsController.create);
 
 export default appointmentsRouter;
